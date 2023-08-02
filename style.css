@@ -1,0 +1,1300 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Vithkuqi:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/typo-slab-serif');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Vollkorn:wght@400;500;600;700;800;900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    flex-wrap: wrap;
+
+  
+}
+.container{
+ min-width: 100% !important;
+
+ padding-left: 50px !important;
+ padding-right: 50px !important;
+}
+
+/*header*/
+
+header{
+    /*background-image:url(img/bg.jpg);*/
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+#top-header {
+ 
+  background-color: rgba(0, 0, 0, 0.4);
+    
+
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+
+    gap: 10vw;
+    align-items: center; /* Adjusted to align vertically centered */
+    border-bottom: 2px solid;
+    padding: 10px;
+    border-color: #C29A6D;
+    ;
+    margin: auto;
+}
+#top-header {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+#logo {
+  font-family: 'Vollkorn', serif;
+     font-size: 2rem !important;                                            
+    font-weight: 600;
+ 
+
+                                                
+}
+
+#bot-header {
+    display: flex;
+    flex-direction: row;
+   
+    justify-content: center;
+    align-items: center; /* Adjusted to align vertically centered */
+    gap: 60px;
+    background: #C29A6D;
+   
+   
+    margin: auto;
+}
+
+#bot-header a {
+    font-size: 0.8rem;
+    padding: 5px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase; /* Adjusted to the appropriate font-weight value */
+}
+
+#bot-header a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+header img {
+
+    max-width: 80px;
+  
+   
+}
+
+
+#bot-header a:hover {
+transform: scale(1.1);
+transition: 0.8s;
+}
+
+/* Fim do Header*/
+
+
+.carroussel{
+
+ overflow: hidden;
+
+}
+
+.container-100w img{
+  width: 200%;
+  overflow: hidden;
+
+}
+
+.container-100w{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+img{
+  object-fit: cover;
+}
+
+/*Carousel*/
+.carroussel{
+
+  overflow: hidden;
+ 
+ }
+ 
+ .container-100w img{
+   width: 200%;
+   overflow: hidden;
+ 
+ }
+ 
+ .container-100w{
+   display: flex;
+   transition: transform 0.5s ease-in-out;
+   transform: translateX(0);
+ }
+ 
+ img{
+   object-fit: cover;
+ }
+ 
+ /*Carousel*/
+ .container-bg-carousel{
+   position: relative;
+   
+ }
+ .slide-1{
+   background: url(img/carne-banner.jpg);
+   
+ }
+ .slide-2{
+   background: url(img/interior.jpg);
+ }
+ 
+ .slide-3{
+   background: url(img/interior-buffet.jpg);
+ }
+ .slide-4{
+   background: url(img/fachada-real.jpg);
+ }
+ .slide-5{
+   background: url(img/interior.jpg);
+ }
+ .slide-6{
+   background: url(img/interior.jpg);
+ }
+ .slide-7{
+   background: url(img/interior.jpg);
+ }
+ .slide-8{
+   background: url(img/interior.jpg);
+ }
+ .slide-9{
+   background: url(img/interior.jpg);
+ }
+ .slide-10{
+   background: url(img/interior.jpg);
+ }
+ 
+ .slide{
+   width: 100%;
+   height: 89vh;
+   background-size: contain;
+   background-position: center;
+   
+   position: relative;
+ 
+   overflow-x: hidden;
+ }
+ 
+ .arrow img{
+   width:50px ;
+   padding: 10px;
+  
+ }
+ 
+ .arrow:hover{
+   background: rgba(0, 0, 0, 0.5);
+ }
+ 
+ .prev{
+   left: 0;
+ }
+ .next{
+   right: 0;
+ }
+
+   /* carousel cardapio */
+   .container-cardapio-carousel{
+    position: relative;
+    
+  }
+  .slide2-1{
+    background: url(img/fachada-real.jpg);
+  }
+  .slide2-2{
+    background: url(img/interior.jpg);
+  }
+  
+  .slide2-3{
+    background: url(img/interior-buffet.jpg);
+  }
+  .slide2-4{
+    background: url(img/interior.jpg);
+  }
+  .slide2-5{
+    background: url(img/interior.jpg);
+  }
+  .slide2-6{
+    background: url(img/interior.jpg);
+  }
+  .slide2-7{
+    background: url(img/interior.jpg);
+  }
+  .slide2-8{
+    background: url(img/interior.jpg);
+  }
+  .slide2-9{
+    background: url(img/interior.jpg);
+  }
+  .slide2-10{
+    background: url(img/interior.jpg);
+  }
+  
+  .slide2{
+
+
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  
+    overflow-x: hidden;
+  }
+  
+  .arrow2 img{
+    width:50px ;
+    padding: 10px;
+   
+  }
+  
+  .arrow2:hover{
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .prev2{
+    left: 0;
+  }
+  .next2{
+    right: 0;
+  }
+
+/*Fim do carousel*/
+
+/*Parallax BG*/
+section#img-parallax{
+    min-width: 100%;
+    background-image: url(img/bg-cardapio.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+
+section#img-parallax1{
+  min-width: 100%;
+  background-image: url(img/bg-price.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+
+
+section#img-parallax2{
+  min-width: 100%;
+  background-image: url(img/bg-cardapio2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+
+
+}
+
+section#img-parallax3{
+  min-width: 100%;
+  background-image: url(img/bg-content.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+
+
+}
+
+
+section#img-parallax4{
+  min-width: 100%;
+  background-image: url(img/bg-cardapio3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+
+
+}
+section#img-parallax5{
+  min-width: 100%;
+  background-image: url(img/bg-cardapio4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+
+
+}
+
+section#img-parallax6{
+  min-width: 100%;
+  background-image: url(img/bg-cardapio5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+
+
+}
+/*FIM do Parallax BG*/
+
+/*Placas dos titulos*/
+.sign {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+  
+    overflow-x: hidden;
+  
+}
+.sign img{
+  max-width: 20vw;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+.arrow{
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%) ;
+  cursor: pointer;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  transform: background 500ms;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+/*Fim das placas dos titulos*/
+
+/*Bloco Preços*/
+.price-box{
+    width: 50%;
+  }
+
+  .price-box2{
+    width: 40%;
+  }
+  
+
+  .price-box h3{
+
+  }
+
+  .price-box hr{
+    border: 1px solid #7a7a7a;
+    margin: 5px;
+    
+  }
+  
+  
+  .price{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    
+  }
+  
+  .price h6{
+    color: #fff;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+  }
+  
+  .price p{
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 0 !important;
+  }
+  
+  .price a{
+    color: #ffffff93;
+    font-size: 0.8rem;
+  }
+  
+   .price-info{
+    display: flex;
+    flex-direction:column ;
+    max-width: 50%;
+   
+    
+   }
+  
+  
+  
+   .price-box p {
+    color: #ffffffe1;
+    font-size: 1rem;
+  
+    text-align: start;
+   }
+  
+  
+   .price-box-container {
+    display: inline-flex;
+    flex-direction: row;
+    
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+ ;
+    box-sizing: border-box;
+    gap: 50px;
+    vertical-align: top;
+    
+
+  }
+
+  /* Fim do bloco preços*/
+
+  /* Bloco de Promoções */
+
+  .promotion-box{
+    width: 100%;
+    margin: 0;
+    
+    
+  }
+
+
+  .promotion-box h3{
+    color: #000;
+    font-weight: 600;
+    width: 40vw !important;
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  .promotion-box h2{
+    color: #000;
+    font-weight: 600;
+  }
+    /*FIM do Bloco de Promoções */
+
+    /*Bloco de cardápio*/
+    .cardapio{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0;
+        gap: 30px;
+        min-width: 100%;
+        
+    }
+    
+    .container h2{
+        text-transform: uppercase;
+        text-align: center;
+        padding: 10px;
+        
+    }
+    
+    
+    
+
+    .info-cardapio{
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+    }
+    #end h4,#end p{
+      text-align: end;
+    }
+    .info-cardapio div{
+      width: 50%;
+      
+    }
+      
+      .info-cardapio-reverse h3{
+        margin: 0;
+    
+       
+        font-size: 1.5rem;
+    
+        
+        text-transform: uppercase;
+        font-family: 'Quicksand', sans-serif;
+    
+      }
+     .title-cardapio{
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-transform: uppercase;
+      align-items: center;
+      
+     }
+     #diferenciais p{
+      color: #000;
+      font-size: 1rem;
+     }
+    
+      .info-cardapio-reverse h4{
+        font-size: 1.3rem;
+        text-align: end;
+        text-transform: uppercase;
+        font-family: 'Quicksand', sans-serif;
+    
+      }
+    
+      .info-cardapio-reverse p{
+        font-size: 1rem;
+        text-align: end;
+        margin: 0;
+        padding: 0;
+    
+      }
+    
+    
+    
+    
+      #diferenciais{
+       
+        
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        
+      }
+    .block-dif-1, .block-dif-2{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+    }
+    
+    .block-dif-1 h4, .block-dif-2 h4{
+      font-size: 1.3rem;
+    color: #000;
+    text-transform: uppercase;
+  
+    }
+    
+    
+    .info-cardapio h4{
+      font-size: 1.3rem;
+      text-align: start;
+      text-transform: uppercase;
+      font-family: 'Quicksand', sans-serif;
+    
+    }
+    
+    .info-cardapio p{
+      font-size: 1rem;
+      text-align: start;
+      margin: 0;
+      padding: 0;
+    
+    }
+    
+    
+    .carousel-title h2 {
+        color: #fff;
+        font-size: 2rem;
+        text-align: center;
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adicione sombra ao texto para melhorar a visibilidade */
+    }
+
+    .cardapio{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        gap: 30px;
+        max-width: 85vw;
+    }
+    
+    .container h2{
+        text-transform: uppercase;
+        text-align: center;
+        padding: 10px;
+        
+    }
+    
+    
+    
+
+    
+
+
+    /* Fim do bloco de Cardápio */
+
+    /*Bloco avaliações*/
+
+    .avaliacoes img{ 
+      width: 90vw;
+
+    }
+
+    .avaliacoes a{
+      background-color: #C29A6D;
+      padding: 10px;
+      border-radius: 5px;
+      color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    margin:20px;
+    box-shadow: 2px 3px 5px 3px #00000088;
+ 
+    }
+    .avaliacoes a:hover{
+      transform: scale(1.1);
+      transition: 0.5s;
+ 
+    }
+
+    .avaliacoes{
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    /* Bloco de conteudo*/
+
+    .content{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+
+    }
+
+    .content h2{
+      font-size: 1.5rem;
+      padding: 5px;
+      text-transform: uppercase;
+      font-family: 'Quicksand', sans-serif;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+  
+      
+    }
+   
+    .box-content-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+
+    }
+ 
+
+    .box-content-1 p {
+      font-size: 0.9rem;
+      text-align: justify;
+      padding: 10px;
+    }
+
+    /*BLOCO ABOUT*/
+
+    .about{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      align-items:center;
+      padding: 30px;
+      
+      gap: 20px;
+      line-height: 1.5rem;
+      font-size: 0.9rem;
+
+      
+
+    }
+
+    .about-box2 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+
+
+    }
+
+
+    #divisor{
+      border-left: solid 1px #000;
+      align-items: center;
+      height: 150px;
+      
+    }
+    
+    .about-box2 p{
+      color: #000;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 600;
+      padding: 30px;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      text-align: justify;
+  
+    }
+    .about h3{
+      color: #000;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 600;
+      text-align: center;
+    }
+    .about img{
+      max-width: 300px ;
+    }
+    .about img:hover{
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+
+
+    /*FIM BLOCO ABOUT*/
+
+
+
+
+/* FOOTER */
+footer {
+  background-color: #1b1b1b;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Center the footer content */
+footer section.top-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  max-width: 90%; /* Optional: Set a max width to control the width of the centered content */
+}
+
+.top-footer div {
+
+  display: flex;
+  font-size: 1.0rem;
+}
+
+.box-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box-1 a {
+  font-size: 1.0rem;
+}
+
+.box-1 p {
+  font-size: 1.0rem;
+}
+
+footer h6 {
+  text-transform: uppercase;
+  margin: 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.box-3{
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+ 
+}
+
+.box-3 a{
+  font-size: 1rem;
+}
+
+#social-media{
+  display: flex;
+  flex-direction: row;
+  font-size: 1.6rem;
+  gap: 10px;
+
+}
+
+#social-media i{
+  font-size: 1.8rem;
+  
+}
+
+.box-2{
+  text-align: center;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-2 img{
+  width: 30px;
+  border-radius: 5%;
+}
+
+#social-media i:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  
+}
+
+.projeto-vendas{
+  width: 100%;
+  background: #1b1b1b;
+  color: #fff !important;
+  font-family: 'open sans', 'verdana', 'arial';
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  height: 40px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.projeto-vendas img{
+  width: 150px;
+}
+
+.projeto-vendas a:link{
+  text-decoration: none;
+  color: #fff !important;
+}
+
+.projeto-vendas a{
+  text-decoration: none;
+  color: #fff !important;
+}
+
+#footer_banners_z {
+  display: flex;
+  max-width: 100%; 
+  justify-content: space-between;
+  gap: 5px;
+}
+
+#footer_banners_z img{
+width: 100% !important;
+}
+
+.mapa{
+  border-bottom: solid 10px #1b1b1b;
+}
+
+
+
+
+/* CSS Para dispositivos com largura de tela até 768px (Tablets) */
+@media (max-width: 768px) {
+  /* Ajusta o tamanho do logo */
+  #logo {
+      font-size: 1.5rem !important;  
+  }
+  /* Ajusta o tamanho da fonte do cabeçalho */
+  #top-header {
+      font-size: 0.8rem;
+  }
+  /* Ajusta o tamanho da fonte e o espaçamento dos links do cabeçalho */
+  #bot-header a {
+      font-size: 0.6rem;
+      padding: 3px;
+  }
+  /* Ajusta o tamanho das imagens do carrossel */
+  .carroussel img {
+      width: 100%;
+  }
+  /* Ajusta o tamanho das imagens do carrossel de cardápio */
+  .container-cardapio-carousel img {
+      width: 100%;
+  }
+  /* Ajusta o tamanho do box de preços */
+  .price-box {
+      width: 100%;
+  }
+  /* Ajusta o tamanho do box de cardápio */
+  .cardapio {
+      flex-direction: column;
+      max-width: 100%;
+  }
+  /* Ajusta o tamanho da caixa de promoções */
+  .promotion-box p {
+      
+      white-space: pre-wrap;
+     
+  }
+  /* Ajusta o tamanho das imagens de avaliações */
+  .avaliacoes img {
+      width: 100%;
+  }
+  /* Ajusta o tamanho dos textos de conteúdo */
+  .content h2 {
+      font-size: 1.2rem;
+  }
+  .box-content-1 p {
+      font-size: 0.9rem;
+  }
+  .box-content-1 img{
+    width: 100%;
+  }
+
+  /* Ajusta o tamanho das imagens do sobre */
+  .about img {
+      max-width: 100% ;
+  }
+}
+
+/* CSS Para dispositivos com largura de tela até 480px (Smartphones) */
+@media (max-width: 480px) {
+
+  *{
+    
+    box-sizing: border-box !important;
+
+  }
+
+  body{
+    overflow-x: hidden !important;
+  }
+  p{
+   
+    text-align: start !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  h1,h2,h3,h4,h5,h6{
+    text-align: center !important;
+  }
+
+  a{
+    text-align: start !important;
+  }
+
+  /* Ajusta o tamanho do logo */
+ #top-header img{
+    width: 20% !important;
+  }
+
+  #logo {
+      font-size: 0.6rem !important; 
+  }
+  /* Ajusta o tamanho da fonte do cabeçalho */
+  #top-header {
+      font-size: 0.4rem;
+      max-width: 100%;
+      flex-wrap: nowrap;
+  }
+
+  #top-header  a{
+    font-size: 0.4rem;
+    max-width: 100%;
+    white-space: nowrap;
+}
+  /* Ajusta o tamanho da fonte e o espaçamento dos links do cabeçalho */
+  
+  #bot-header{
+    gap: 10px;
+  }
+  #bot-header a {
+      font-size: 0.5rem;
+      padding: 5px;
+  }
+  /*FIM DO HEADER*/
+/*Banner top*/
+  .slide{
+    max-height: 40vh;
+  }
+
+/*Fim banner top*/
+.container p{
+  font-size: 0.8rem !important;
+  padding: 0;
+}
+
+.container{
+  margin: 0;
+  padding: 20px!important;
+}
+
+
+.container h3{
+  font-size: 1rem !important;
+}
+
+.price-box-container{
+  white-space: nowrap !important; 
+}
+
+.promotion-box{
+  max-width: 480px;
+  min-width: 90%;
+ 
+
+}
+
+/*About us*/
+.about-box2 {
+  width: 100%;
+  flex-direction: column;
+  
+}
+.about-box2 img{
+
+  padding: 0 !important;
+  margin: 0 !important;
+ 
+}
+
+.about{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.about-box2 p{
+  padding: 20px !important;
+}
+
+
+
+
+
+}
+
+/*Placas */
+
+.sign img{
+  max-width: 50% !important;
+  padding-top: 0;
+  padding-bottom:20px ;
+
+}
+
+
+/* Preços */
+.price-box-container h3{
+  text-align: start !important;
+  
+}
+.price-box-container h4{
+  font-size: 0.8rem;
+}
+.price-box p{
+  
+  
+}
+
+.price-box{
+  
+  flex-wrap: wrap !important;
+}
+
+
+
+
+.price-box2{
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  min-width: 90%;
+}
+
+.price{
+  min-width: 90%;
+  flex-wrap: nowrap;
+  gap: 10px;
+
+}
+
+.price h6{
+  font-size: 0.8rem;
+}
+.price p{
+  font-size: 0.8rem !important;
+}
+
+.price a{
+  font-size: 0.6rem !important;
+}
+
+/*Promoçoes*/
+.container {
+  
+  
+}
+
+/*Parralax*/
+
+#img-parallax, #img-parallax1,#img-parallax2,#img-parallax3,#img-parallax4,#img-parallax5,#img-parallax6{
+  background-size:contain;
+  background-position: center !important;
+  background-repeat: no-repeat;
+}
+
+/*Cardapio*/
+
+.cardapio div{
+  width: 100% !important;
+ 
+
+}
+
+.cardapio h4{
+ text-align: start !important;
+ white-space: nowrap !important; 
+
+}
+
+.cardapio p{
+  text-align: start !important;
+  min-width: 90% !important;
+  white-space: break-spaces !important; 
+
+ 
+ }
+
+ .title-cardapio h3 {
+  width: 50vw !important ;
+  font-size: 1.4rem !important;
+ }
+
+#diferenciais{
+  
+  flex-direction: column !important;
+  align-items: normal;
+}
+#diferenciais div{
+  min-width: 90% !important;
+  flex-direction: column !important;
+  align-items: normal;
+}
+
+#diferenciais h4{
+  text-align: start !important;
+}
+
+#diferenciais p{
+  text-align: justify !important;
+}
+.title-dif  {
+  width: 50vw !important ;
+  font-size: 1.4rem !important;
+ }
+
+ .content{
+  gap: 50px;
+ }
+
+ .box-content-1 h2{
+  padding-bottom: 20px;
+ }
+
+ .box-content-1{
+  gap: 10px;
+ }
+
+ /*Footer*/
+
+ footer section.top-footer {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 90%;
+  text-align: start !important; /* Optional: Set a max width to control the width of the centered content */
+}
+
+footer h6{
+  text-align: start !important;
+}
+.box-3, .box-2, .box-1 {
+  text-align: start !important;
+}
+
+#footer_banners_z{
+  display: flex;
+  flex-direction: column !important;
+  width: 100%;
+  align-self:center;
+}
+
+#footer_banners_z img{
+ width: 90% ;
+}
+
+.projeto-vendas{
+  font-size: 0.6rem;
+}
+
+.projeto-vendas img{
+  max-width: 95px !important;
+}
+
+#parceiros-title{
+  transform: rotate(0deg) !important;
+  text-align: center !important;
+
+}
+
+
+#robbu-whatsapp-button{
+  margin-bottom: 5% !important;
+}
+
+
+.avaliacoes img{
+  width: 100% !important;
+}
