@@ -667,6 +667,10 @@ section#img-parallax6{
     /* Fim do bloco de Cardápio */
 
     /*Bloco avaliações*/
+    #img-mob{
+      visibility: hidden !important;
+    }
+
 
     .avaliacoes img{ 
       width: 90vw;
@@ -1112,7 +1116,7 @@ width: 100% !important;
 
 
 
-}
+
 
 /*Placas */
 
@@ -1297,4 +1301,15 @@ footer h6{
 
 .avaliacoes img{
   width: 100% !important;
+}
+
+#img-desk{
+  visibility: hidden !important;
+}
+
+#img-mob{
+  margin-top: -20%;
+  visibility:visible !important;
+}
+
 }
