@@ -1294,8 +1294,8 @@ white-space: pre-wrap;
  }
 
  h3 {
-  width: 60vw !important ;
-  font-size: 1.4rem !important;
+  max-width: 90vw !important ;
+  font-size: 1.2rem !important;
  }
 
 #diferenciais{
