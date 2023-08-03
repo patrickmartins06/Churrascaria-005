@@ -775,6 +775,10 @@ section#img-parallax6{
 
     }
 
+    .about-text p{
+      padding: 10px;
+    }
+
     .about-box2 {
       display: flex;
       flex-direction: row;
@@ -796,7 +800,7 @@ section#img-parallax6{
       color: #000;
       font-family: 'Quicksand', sans-serif;
       font-weight: 600;
-      padding: 30px;
+      
       font-size: 1.2rem;
       line-height: 1.5rem;
       text-align: justify;
@@ -1042,8 +1046,6 @@ width: 100% !important;
   p{
    
     text-align: start !important;
-    padding: 0 !important;
-    margin: 0 !important;
   }
   
 
@@ -1131,7 +1133,7 @@ width: 100% !important;
 /*About us*/
 .about-box2 {
   width: 100%;
-  padding: 10px;
+
   flex-direction: column;
   
 }
@@ -1146,7 +1148,7 @@ height: 1vh !important;
 }
 
 .about-box2 p{
-  padding: 0px 20px 0px 20px !important;
+
   line-height: 0.9rem;
   
   font-size: 0.9rem !important;
