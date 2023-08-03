@@ -1240,7 +1240,7 @@ white-space: pre-wrap;
 /*Parralax*/
 
 #img-parallax, #img-parallax1,#img-parallax2,#img-parallax3,#img-parallax4,#img-parallax5,#img-parallax6{
-  background-size:contain;
+  background-size:cover;
   background-position: center !important;
   background-repeat: no-repeat;
 }
