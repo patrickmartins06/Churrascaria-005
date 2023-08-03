@@ -412,7 +412,7 @@ section#img-parallax6{
 
 
   .price-box hr{
-    border: 1px solid #7a7a7a;
+    border: 1px solid #fff;
     margin: 5px;
 
     
@@ -436,7 +436,7 @@ section#img-parallax6{
   
   .price p{
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin-bottom: 0 !important;
   }
   
@@ -1120,7 +1120,7 @@ width: 100% !important;
 }
 
 .price-box-container{
-  white-space: nowrap !important; 
+   
 }
 
 .promotion-box{
@@ -1224,10 +1224,10 @@ white-space: pre-wrap;
 }
 
 .price h6{
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .price p{
-  font-size: 1.6rem !important;
+  font-size: 1.1rem !important;
 }
 
 .price a{
@@ -1270,7 +1270,7 @@ white-space: pre-wrap;
   width: 100%;
   margin-top: 0em;
   margin-bottom: 0em;
-  opacity: 0.5;
+  opacity: 1;
   padding: 0;
 }
 
@@ -1281,7 +1281,7 @@ white-space: pre-wrap;
   width: 100%;
   margin-top: 0em;
   margin-bottom: 0em;
-  opacity: 0.5;
+  opacity: 1;
   padding: 0;
 }
 
