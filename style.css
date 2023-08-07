@@ -411,10 +411,26 @@ section#img-parallax6{
 /*Bloco Preços*/
 .price-box{
     width: 50%;
+    
+   
   }
 
+ .price-box-hr{
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  max-height: 45vh ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+  margin-right: 3%;
+ }
 
 
+#precos-div{
+  display: flex;
+  flex-direction: row;
+}
 
 
   .price-box hr{
@@ -430,14 +446,52 @@ section#img-parallax6{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
   
     
+  }
+
+  .price-box2 p{
+    padding-left: 20px;
+
+  }
+
+  .price-box2 h3{
+    text-decoration: underline;
   }
   
   .price h6{
     color: #fff;
     font-size: 1.2rem;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
+ 
+  }
+
+
+  .feriados{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+     
+
+  }
+
+  .feriados h3{
+    font-size: 1.2rem;
+  }
+  .feriados h6{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feriados p{
+    padding-left: 20px;
   }
   
   .price p{
@@ -519,7 +573,7 @@ section#img-parallax6{
     /*Bloco de cardápio*/
     .cardapio{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
@@ -539,10 +593,13 @@ section#img-parallax6{
     #desk-hr{
       display: flex;
       text-align: center;
-      border: solid 1px #fff;
-      width: 100%;
+      border: solid 0.01em #fff !important;
+      width: 90% ;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
 
-      opacity: 1;
+      opacity: 0.5;
       margin-top: 10px;
       margin-bottom: 10px;
     }
@@ -552,6 +609,8 @@ section#img-parallax6{
       
     }
     
+
+
     #mobile-hr-black{
       display: none;
     }
@@ -561,9 +620,17 @@ section#img-parallax6{
       display: flex;
       flex-direction: row;
       gap: 30px;
-     
+     justify-content: center;
+     align-items: center;
       padding-bottom: 20px;
+      margin: auto;
     }
+    #cardapio-block{
+      display: flex;
+      flex-direction: column;
+   
+    }
+
     #end h4,#end p{
       text-align: end;
     }
