@@ -6,6 +6,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Vollkorn:wght@400;500;600;700;800;900&display=swap');
 
+/*IFRAME*/
+
+
+
+.cardapio-mod {
+  position: relative;
+  width: 100%;
+
+  border: 0;
+  padding: 0 !important;
+  height: 800px ;
+}
+
+.content-below-iframe {
+  /* Estilos para o conteúdo abaixo do iframe */
+}
+
+/*IFRAME*/
 
 * {
   margin: 0;
@@ -16,6 +34,11 @@
 
   
 }
+
+body {
+    
+  margin: 0;
+}
 .container{
  min-width: 100% !important;
 
@@ -25,12 +48,23 @@
 
 /*header*/
 
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Vithkuqi:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/typo-slab-serif');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Vollkorn:wght@400;500;600;700;800;900&display=swap');
+
 header{
     /*background-image:url(img/bg.jpg);*/
     background-color: #000;
     background-size: cover;
     background-position: center;
    
+}
+
+.title-cardapio{
+  text-decoration: underline;
 }
 
 #top-header {
@@ -107,6 +141,8 @@ transform: scale(1.1);
 transition: 0.8s;
 }
 
+
+
 /* Fim do Header*/
 
 
@@ -116,82 +152,16 @@ transition: 0.8s;
 
 }
 
-.container-100w img{
-  width: 200%;
-  overflow: hidden;
 
-}
 
-.container-100w{
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  transform: translateX(0);
-}
+
 
 img{
   object-fit: cover;
 }
 
 /*Carousel*/
-.carroussel{
 
-  overflow: hidden;
- 
- }
- 
- .container-100w img{
-   width: 200%;
-   overflow: hidden;
- 
- }
- 
- .container-100w{
-   display: flex;
-   transition: transform 0.5s ease-in-out;
-   transform: translateX(0);
- }
- 
- img{
-   object-fit: cover;
- }
- 
- /*Carousel*/
- .container-bg-carousel{
-   position: relative;
-   
- }
- .slide-1{
-   background: url(img/carne-banner.jpg);
-   
- }
- .slide-2{
-   background: url(img/interior.jpg);
- }
- 
- .slide-3{
-   background: url(img/interior-buffet.jpg);
- }
- .slide-4{
-   background: url(img/fachada-real.jpg);
- }
- .slide-5{
-   background: url(img/interior.jpg);
- }
- .slide-6{
-   background: url(img/interior.jpg);
- }
- .slide-7{
-   background: url(img/interior.jpg);
- }
- .slide-8{
-   background: url(img/interior.jpg);
- }
- .slide-9{
-   background: url(img/interior.jpg);
- }
- .slide-10{
-   background: url(img/interior.jpg);
- }
 
  .banner{
   min-width: 100%;
@@ -199,98 +169,7 @@ img{
    
  }
  
- .slide{
-   width: 100%;
-   height: 89vh;
-   background-size: contain;
-   background-position: center;
-   
-   position: relative;
  
-   overflow-x: hidden;
- }
- 
- .arrow img{
-   width:50px ;
-   padding: 10px;
-  
- }
- 
- .arrow:hover{
-   background: rgba(0, 0, 0, 0.5);
- }
- 
- .prev{
-   left: 0;
- }
- .next{
-   right: 0;
- }
-
-   /* carousel cardapio */
-   .container-cardapio-carousel{
-    position: relative;
-    
-  }
-  .slide2-1{
-    background: url(img/fachada-real.jpg);
-  }
-  .slide2-2{
-    background: url(img/interior.jpg);
-  }
-  
-  .slide2-3{
-    background: url(img/interior-buffet.jpg);
-  }
-  .slide2-4{
-    background: url(img/interior.jpg);
-  }
-  .slide2-5{
-    background: url(img/interior.jpg);
-  }
-  .slide2-6{
-    background: url(img/interior.jpg);
-  }
-  .slide2-7{
-    background: url(img/interior.jpg);
-  }
-  .slide2-8{
-    background: url(img/interior.jpg);
-  }
-  .slide2-9{
-    background: url(img/interior.jpg);
-  }
-  .slide2-10{
-    background: url(img/interior.jpg);
-  }
-  
-  .slide2{
-
-
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  
-    overflow-x: hidden;
-  }
-  
-  .arrow2 img{
-    width:50px ;
-    padding: 10px;
-   
-  }
-  
-  .arrow2:hover{
-    background: rgba(0, 0, 0, 0.5);
-  }
-  
-  .prev2{
-    left: 0;
-  }
-  .next2{
-    right: 0;
-  }
-
 /*Fim do carousel*/
 
 /*Parallax BG*/
@@ -331,8 +210,7 @@ section#img-parallax3{
   background-image: url(img/bg-content.jpg);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
-  overflow-x: hidden;
+
 
 
 }
@@ -467,6 +345,13 @@ section#img-parallax6{
  
   }
 
+  iframe {
+    width: 100%;
+    display: block;
+    border: none;
+    overflow: hidden;
+}
+
 
   .feriados{
     display: flex;
@@ -532,7 +417,7 @@ section#img-parallax6{
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    justify-content: center;
+    justify-content: space-between;
     box-sizing: border-box;
     gap: 50px;
     vertical-align: top;
@@ -546,11 +431,14 @@ section#img-parallax6{
   /* Bloco de Promoções */
 
   .promotion-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin: 0;
     padding-top: 20px;
     padding-bottom: 20px;
-    
     
   }
 
@@ -570,242 +458,262 @@ section#img-parallax6{
   }
     /*FIM do Bloco de Promoções */
 
-    /*Bloco de cardápio*/
-    .cardapio{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        padding: 0;
-        gap: 30px;
-        min-width: 100%;
-        
+
+    /*Bloco cardápio*/
+
+
+    #cardapio-carousel{
+      height: 750px;
     }
+
+    body {
     
-    .container h2{
-        text-transform: uppercase;
-        text-align: center;
-        padding: 10px;
-        
+      margin: 0;
     }
-    
-    #desk-hr{
+
+    .slick-slide img {
+      width: 100%;
+      height: auto;
+    }
+
+    .cardapio-slide {
+      min-height: 80vh;
       display: flex;
-      text-align: center;
-      border: solid 0.01em #fff !important;
-      width: 90% ;
-      margin: 0 auto;
-      align-items: center;
       justify-content: center;
-
-      opacity: 0.5;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      align-items: center;
+      position: relative;
     }
 
-    #mobile-hr{
-      display: none;
-      
+    .cardapio-slide h1,
+    .cardapio-slide h2,
+    .cardapio-slide p {
+      color: #fff;
     }
-    
 
 
-    #mobile-hr-black{
-      display: none;
+    .cardapio-content h1{
+      color: #fff;
     }
-    
 
-    .info-cardapio{
+    .content1{
       display: flex;
-      flex-direction: row;
-      gap: 30px;
-     justify-content: center;
-     align-items: center;
-      padding-bottom: 20px;
-      margin: auto;
+      justify-content: space-between;
+      align-items: start;
+      margin: 0 auto;
+      padding: 20px 60px 40px 60px;
+      min-height: 50vh;
+      gap: 10%;
     }
-    #cardapio-block{
+    .content-slider {
       display: flex;
       flex-direction: column;
-   
+      justify-content: space-between;
+      gap: 0px; /* Espaçamento entre os elementos */
+      width: 80%; /* Largura fixa para o content-slider */
+      margin: 0 auto; /* Centralizar o content-slider horizontalmente */
+    }
+    .block-content {
+      flex: 1; /* Faz os elementos dentro do content-slider ocuparem o mesmo espaço */
     }
 
-    #end h4,#end p{
-      text-align: end;
+    .cardapio-content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items:center;
+    /* Altura do carousel, ajuste conforme necessário */
+
+     
     }
-    .info-cardapio div{
-      width: 50%;
-      
+
+    .diferenciais{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        
+        color: black;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        padding: 20px 70px ;
+        
+        display: flex;
+    
+    }
+    .cardapio-slide{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
-    .info-cardapio h4{
+    .cardapio-content h2 {
+    font-size: 1.4rem;
+    }
+    .cardapio-content p {
+    font-size: 1rem;
+    }
+
+
+    .cardapio-content  {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       padding: 20px 20px 0 0;
     }
-
-
-      .info-cardapio-reverse h3{
-        margin: 0;
-    
-       
-        font-size: 1.5rem;
-    
-        
-        text-transform: uppercase;
-        font-family: 'Quicksand', sans-serif;
-    
-      }
-     .title-cardapio{
-      width: 100%;
-      padding-top: 20px;
-    
-      margin: 5px auto;
-      margin-bottom: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-transform: uppercase;
-      align-items: center;
-      
-     }
-     #diferenciais p{
-      color: #000;
-      font-size: 1rem;
-     }
-    
-      .info-cardapio-reverse h4{
-        font-size: 1.3rem;
-        text-align: end;
-        text-transform: uppercase;
-        font-family: 'Quicksand', sans-serif;
-    
-      }
-    
-      .info-cardapio-reverse p{
-        font-size: 1rem;
-        text-align: end;
-        margin: 0;
-        padding: 0;
-    
-      }
-    
-    
-    
-    
-      #diferenciais{
-       
-        
-        display: flex;
-        flex-direction: row;
-        margin: 0 auto;
-        justify-content: space-between;
-        align-items: center;
-        
-      }
-    .block-dif-1, .block-dif-2{
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      padding-top: 20px;
-    }
-    
-    .block-dif-1 h4, .block-dif-2 h4{
-      font-size: 1.3rem;
-    color: #000;
-    text-transform: uppercase;
   
-    }
-    
-    
-    .info-cardapio h4{
-      font-size: 1.3rem;
-      text-align: start;
-      text-transform: uppercase;
-      font-family: 'Quicksand', sans-serif;
-    
-    }
-    
-    .info-cardapio p{
-      font-size: 1rem;
-      text-align: start;
-      margin: 0;
-      padding: 0;
-    
-    }
-    
-    
-    .carousel-title h2 {
-        color: #fff;
-        font-size: 2rem;
-        text-align: center;
-        margin: 0;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adicione sombra ao texto para melhorar a visibilidade */
+
+ 
+
+    .cardapio-slide {
+
+      min-height: 80vh;
+      max-height: 80vh;
+     /* Ocupar toda a altura da tela */
+      display: flex;
+      z-index: 2;
+      justify-content: center;
+      align-items: center;
     }
 
-    .cardapio{
+    .start {
+      text-align: start;
+    }
+
+    .end {
+      text-align: end;
+    }
+
+    .content1{
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        gap: 30px;
-        max-width: 85vw;
     }
-    
-    .container h2{
-        text-transform: uppercase;
-        text-align: center;
-        padding: 10px;
+
+    .diferenciais p{
+        color: black;
         
+
     }
-    
-    
-    
-
-    
 
 
-    /* Fim do bloco de Cardápio */
+    /* Estilos adicionais para textos */
+    h2,
+    p {
+      color: #fff; /* Letras brancas */
+    }
+    /* Estilos para as setas de navegação */
+
+
+  .block-dif-1, .block-dif-2{
+    max-width: 40%;
+  }
+
+  .modal-lg{
+    max-width: 100%;
+    max-height: 80%;
+  }
+
+/* Estilos para as setas de navegação */
+/* Estilos para o botão de navegação do Slick Carousel */
+.slick-prev:before,
+    .slick-next:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 30px;
+      color: #fff;
+    }
+
+    .slick-prev:before {
+      content: "\f053";
+    }
+
+    .slick-next:before {
+      content: "\f054";
+    }
+
+    /* Estilos para posicionar as setas no carousel */
+    .slick-prev,
+    .slick-next {
+      top: 40%;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+
+    .slick-prev {
+      left: 20px;
+    }
+
+    .slick-next {
+      right: 20px;
+    }
+
+  
+    /* Estilos para posicionar os dots no carousel */
+    .slick-dots {
+      position: absolute;
+      top: 60%;
+     
+      right: 10px;
+    }
+
+
+
+    .slick-dots li {
+      margin: 0;
+    }
+
+          /* Estilo para os dots inativos */
+    .slick-dots li button {
+      background-color: transparent;
+      border: 1px solid #fff;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    /* Estilo para o dot ativo (com cor branca) */
+    .slick-dots li.slick-active button {
+      background-color: #fff;
+      box-shadow: none; /* Remover o ponto preto no hover */
+    }
+
+    /* Estilo para o dot ativo (remover o ponto preto) */
+    .slick-dots li.slick-active button:before {
+      content: none;
+    }
+
+    .block-content{
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+    }
+
+    .block-content {
+     
+    }
+
+    .block-content h2{
+      padding: 0;
+      margin: 0;
+    }
+
+
+    /*FIM Bloco cardápio*/
+    
 
     /*Bloco avaliações*/
+    #img-desk{
+      display: flex !important;
+      max-width: 100%;
+    }
+    
     #img-mob{
+    
       display: none !important;
-      margin: -85%;
-      margin-top: -20%;
-      
     }
 
-
-    .avaliacoes img{ 
-      width: 90vw;
-
-    }
-
-    .avaliacoes a{
-      background-color: #C29A6D;
-      padding: 10px;
-      border-radius: 5px;
-      color: #fff;
-    font-weight: 600;
-    cursor: pointer;
-    text-decoration: none;
-    margin:20px;
-    box-shadow: 2px 3px 5px 3px #00000088;
- 
-    }
-    .avaliacoes a:hover{
-      transform: scale(1.1);
-      transition: 0.5s;
- 
-    }
-
-    .avaliacoes{
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
 
 
     /* Bloco de conteudo*/
@@ -813,8 +721,9 @@ section#img-parallax6{
     .content{
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: end;
       align-items: flex-start;
+      gap: 100px;
 
     }
 
@@ -865,8 +774,8 @@ section#img-parallax6{
 
     }
 
-    .about-text p{
-      padding: 10px;
+    .about-text p {
+      margin-bottom: 10px !important;
     }
 
     .about-box2 {
@@ -874,6 +783,17 @@ section#img-parallax6{
       flex-direction: row;
       align-items: center;
       gap: 20px;
+
+
+    }
+
+    .about-box2 a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-size: 1.4rem;
 
 
     }
@@ -886,6 +806,8 @@ section#img-parallax6{
       
     }
     
+
+
     .about-box2 p{
       color: #000;
       font-family: 'Quicksand', sans-serif;
@@ -903,13 +825,51 @@ section#img-parallax6{
       text-align: center;
     }
     .about img{
+      width: 300px ;
+      height: 200px;
       max-width: 300px ;
-    }
-    .about img:hover{
-      transform: scale(1.1);
-      transition: 0.5s;
+      max-height: 200px;
     }
 
+
+    /*Modal*/
+    .modal-content {
+      background-color: transparent !important;
+      border: none !important;
+
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+ 
+      border-radius: 50%;
+      padding: 20px;
+    }
+  
+    /* Ajuste a cor do ícone das setas */
+    .carousel-control-prev-icon::before, .carousel-control-next-icon::before {
+      color: white;
+    }
+  
+    /* Ajuste a posição vertical das setas */
+
+
+  
+    .modal-header{
+      border: none !important;
+    }
+
+    /* Estilo para o botão de fechar */
+    .btn-close {
+      color: white !important; /* Define a cor branca para o botão de fechar */
+      font-size: 1.5rem !important; /* Ajusta o tamanho do ícone do botão de fechar */
+      --bs-btn-close-bg: url("https://w7.pngwing.com/pngs/300/600/png-transparent-white-font-close-white-black-art-thumbnail.png");
+    }
+
+    /* Ajusta o tamanho das imagens do carousel */
+    .carousel-item img {
+      max-width: 100% !important; /* Faz com que as imagens ocupem todo o espaço disponível */
+      height: auto !important; /* Mantém a proporção da imagem */
+    }
 
     /*FIM BLOCO ABOUT*/
 
@@ -1045,17 +1005,46 @@ footer h6 {
   max-width: 100%; 
   justify-content: space-between;
   gap: 5px;
+  padding: 10px;
 }
 
-#footer_banners_z img{
-width: 100% !important;
+#footer_banners_z img {
+  width: 100% !important;
+  padding: 20px 10px 0 0;
 }
+
+
 
 .mapa{
   border-bottom: solid 10px #1b1b1b;
 }
 
 
+/*Video*/
+#video{
+  background-image: url(img/bg-video.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+#video iframe{
+  width: 800px;
+  height: 400px;
+  border: 1px #fff solid;
+}
+
+#video img{
+  width: 800px;
+  height: 400px;
+  border: 4px #fff solid;
+  border-radius: 5px;
+}
 
 
 /* CSS Para dispositivos com largura de tela até 768px (Tablets) */
@@ -1078,18 +1067,13 @@ width: 100% !important;
       width: 100%;
   }
   /* Ajusta o tamanho das imagens do carrossel de cardápio */
-  .container-cardapio-carousel img {
-      width: 100%;
-  }
+
   /* Ajusta o tamanho do box de preços */
   .price-box {
       width: 100%;
   }
   /* Ajusta o tamanho do box de cardápio */
-  .cardapio {
-      flex-direction: column;
-      max-width: 100%;
-  }
+
   /* Ajusta o tamanho da caixa de promoções */
   .promotion-box p {
       
@@ -1106,6 +1090,11 @@ width: 100% !important;
   }
   .box-content-1 p {
       font-size: 0.9rem;
+  }
+
+
+  .box-content-1{
+    max-width: 100% !important;
   }
   .box-content-1 img{
     width: 120vw;
@@ -1331,99 +1320,34 @@ white-space: pre-wrap;
 
 /*Parralax*/
 
-#img-parallax, #img-parallax1,#img-parallax2,#img-parallax3,#img-parallax4,#img-parallax5,#img-parallax6{
+#img-parallax, #img-parallax1,#img-parallax2,#img-parallax4,#img-parallax5,#img-parallax6{
   background-size:cover;
   background-position: center !important;
   background-repeat: no-repeat;
 }
 
+
 /*Cardapio*/
-
-.cardapio div{
-  width: 100% !important;
- 
-
-}
-
-.title-cardapio{
-  font-size: 1.1rem;
-}
-
-.cardapio h4{
- text-align: start !important;
- white-space: nowrap !important; 
-
-}
-
-#mobile-hr{
-  display: flex;
-  text-align: center;
-  border: solid 1px #fff;
+.cardapio-mod {
+  position: relative;
   width: 100%;
-  margin-top: 0em;
-  margin-bottom: 0em;
-  opacity: 1;
-  padding: 0;
-}
 
-#mobile-hr-black{
-  display: flex;
+  border: 0;
+  padding: 0 !important;
+  height: 150vh ;
+}
+.box-content-1 img {
+  width: 90%;
   text-align: center;
-  border: solid 1px #000;
-  width: 100%;
-  margin-top: 0em;
-  margin-bottom: 0em;
-  opacity: 1;
-  padding: 0;
+  align-items: center;
 }
 
-.cardapio p{
-  text-align: start !important;
-  min-width: 90% !important;
-  white-space: break-spaces !important; 
-
- 
- }
-
- h3 {
-  max-width: 90vw !important ;
-  font-size: 1.2rem !important;
- }
-
-#diferenciais{
-  
-  flex-direction: column !important;
-  align-items: normal;
-}
-#diferenciais div{
-  min-width: 90% !important;
-  flex-direction: column !important;
-  align-items: normal;
+.box-content-1{
+  width: 90%;
 }
 
-#diferenciais h4{
-  text-align: start !important;
-}
 
-#diferenciais p{
-  text-align: justify !important;
-}
-.title-dif  {
-  width: 60vw !important ;
-  font-size: 1.4rem !important;
- }
 
- .content{
-  gap: 50px;
- }
-
- .box-content-1 h2{
-  padding-bottom: 20px;
- }
-
- .box-content-1{
-  gap: 10px;
- }
 
  /*Footer*/
 
@@ -1493,6 +1417,35 @@ footer h6{
 
 #desk-hr{
   display: none;
+}
+
+
+/*Video*/
+
+#video{
+  background-image: url(img/bg-video.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+#video iframe{
+  width: 100%;
+  height: 25%;
+  border: 1px #fff solid;
+}
+
+#video img{
+  width: 100%;
+  height: 25%;
+  border: 4px #fff solid;
+  border-radius: 5px;
 }
 
 }

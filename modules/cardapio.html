@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio Carousel</title>
+
+  <!-- Inclua o arquivo CSS do Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Inclua o arquivo CSS do Slick Carousel -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Inclua o arquivo CSS do Slick Carousel (tema padrão) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <!-- Inclua o arquivo CSS do Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+  <!-- Estilos personalizados -->
+  <style>
+    /* Estilos adicionais para o carousel */
+
+    #cardapio-carousel {
+      max-height: 850px;
+
+    }
+
+    body {
+
+      margin: 0;
+    }
+
+    .slick-slide img {
+      width: 100%;
+      height: auto;
+    }
+
+    .cardapio-slide {
+      min-height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .cardapio-slide h1,
+    .cardapio-slide h2,
+    .cardapio-slide p {
+      color: #fff;
+    }
+
+
+    .cardapio-content h1 {
+      color: #fff;
+    }
+
+    .content1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      margin: 0 auto;
+      padding: 20px 60px 40px 60px;
+      min-height: 50vh;
+      gap: 10%;
+    }
+
+    .content-slider {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0px;
+      /* Espaçamento entre os elementos */
+      width: 80%;
+      /* Largura fixa para o content-slider */
+      margin: 0 auto;
+      /* Centralizar o content-slider horizontalmente */
+    }
+
+    .block-content {
+      flex: 1;
+      /* Faz os elementos dentro do content-slider ocuparem o mesmo espaço */
+    }
+
+    .cardapio-content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      /* Altura do carousel, ajuste conforme necessário */
+
+
+    }
+
+    .diferenciais {
+      width: 100vw;
+      display: flex;
+      justify-content: space-between;
+
+      color: black;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      padding: 20px 70px;
+
+      display: flex;
+
+    }
+
+    .cardapio-slide {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cardapio-content h2 {
+      font-size: 1.4rem;
+    }
+
+    .cardapio-content p {
+      font-size: 1rem;
+    }
+
+
+    .cardapio-content {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 20px 20px 0 0;
+    }
+
+
+
+
+    .cardapio-slide {
+
+      min-height: 80vh;
+
+      /* Ocupar toda a altura da tela */
+      display: flex;
+      z-index: 2;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .start {
+      text-align: start;
+    }
+
+    .end {
+      text-align: end;
+    }
+
+    .content1 {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .diferenciais p {
+      color: black;
+
+
+    }
+
+
+    /* Estilos adicionais para textos */
+    h2,
+    p {
+      color: #fff;
+      /* Letras brancas */
+    }
+
+    /* Estilos para as setas de navegação */
+
+
+    .block-dif-1,
+    .block-dif-2 {
+      max-width: 40%;
+    }
+
+    /* Estilos para as setas de navegação */
+    /* Estilos para o botão de navegação do Slick Carousel */
+    .slick-prev:before,
+    .slick-next:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 30px;
+      color: #fff;
+    }
+
+    .slick-prev:before {
+      content: "\f053";
+    }
+
+    .slick-next:before {
+      content: "\f054";
+    }
+
+    /* Estilos para posicionar as setas no carousel */
+    .slick-prev,
+    .slick-next {
+      top: 45%;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+
+    .slick-prev {
+      left: 20px;
+    }
+
+    .slick-next {
+      right: 20px;
+    }
+
+
+    /* Estilos para posicionar os dots no carousel */
+    .slick-dots {
+      position: absolute;
+      top: 60%;
+
+
+      right: 10px;
+    }
+
+
+
+    .slick-dots li {
+      margin: 0;
+    }
+
+    /* Estilo para os dots inativos */
+    .slick-dots li button {
+      background-color: transparent;
+      border: 1px solid #fff;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    /* Estilo para o dot ativo (com cor branca) */
+    .slick-dots li.slick-active button {
+      background-color: #fff;
+      box-shadow: none;
+      /* Remover o ponto preto no hover */
+    }
+
+    /* Estilo para o dot ativo (remover o ponto preto) */
+    .slick-dots li.slick-active button:before {
+      content: none;
+    }
+
+    .block-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+    }
+
+    .block-content {}
+
+    .block-content h2 {
+      padding: 0;
+      margin: 0;
+    }
+
+    /*Placas */
+
+    .sign img {
+      margin-top: -20px;
+      padding-top: 0;
+      padding-bottom: 20px;
+    }
+
+
+    /*Mobile*/
+    @media (max-width: 480px) {
+      .content1 {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .diferenciais {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 50px;
+      }
+
+      .content-slider h2 {
+        font-size: 1.2rem;
+      }
+
+      .content-slider p {
+        font-size: 0.8rem;
+      }
+
+
+      .block-dif-1 h4,
+      .block-dif-2 h4 {
+        white-space: nowrap;
+        font-size: 1.2rem;
+      }
+
+      .block-dif-1 p,
+      .block-dif-2 p {
+        font-size: 0.8rem;
+      }
+
+      .block-dif-1,
+      .block-dif-2 {
+        max-width: 100%;
+      }
+
+      .end {
+        text-align: start;
+      }
+      .slick-dots, .slick-dots li {
+        display: none;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Estrutura do carousel -->
+  <div id="cardapio-carousel">
+
+    <!-- Slide 1 -->
+    <div class="cardapio-slide">
+      <div class="cardapio-content" style="background-image: url('imgs/bg-cardapio.jpg');">
+        <div class="sign">
+          <img src="imgs/placa-de-madeira.png" alt="">
+
+        </div>
+        <h1 style="border-bottom: 3px solid #b40000; text-align: center; ;">Rodízio de Carnes</h1>
+        <div style="color: #fff;" class="content1">
+
+          <div class="content-slider start">
+            <div class="block-content">
+              <h2 style="/**/">Cortes Bovinos</h2>
+              <p style="/*1.3*/">Red Angus Australiano | Picanha Alho e Óleo | Filet Argentino | Picanha Nobre | Picanha
+                | Alcatra | Costela | Filé Mignon | Maminha com Queijo | Fraldinha na Mostarda | Fraldinha no Sal |
+                Cupim</p>
+
+            </div>
+            <div class="block-content">
+              <h2 style="/**/">Cortes de Cordeiro</h2>
+              <p style="/*1.3*/">Paleta de Cordeiro | Carré de Cordeiro | Perna de Cordeiro | Costela de Cordeiro | Filé
+                de Cordeiro | Stinco de Cordeiro | Lombo de Cordeiro | Picadinho de Cordeiro | Ensopado de Cordeiro</p>
+            </div>
+          </div>
+          <div class="content-slider end">
+
+            <div class="block-content">
+              <h2>Cortes de Aves</h2>
+              <p style="/*1.3*/">Coração | Asinha de Faisão | Coxinha de Faisão | Peru com Bacon | Peito de Frango |
+                Coxa de Frango | Sobrecoxa de Frango | Asa de Frango | Filé de Peito de Peru | Coxa de Pato | Sobrecoxa
+                de Pato</p>
+            </div>
+            <div class="block-content">
+
+              <h2 style="/**/">Cortes Suínos</h2>
+              <p style="/*1.3*/">Costela de Porco | Linguicinha Toscana | Linguicinha Apimentada | Lombo de Porco |
+                Pernil de Porco | Barriga de Porco | Picanha Suína | Joelho de Porco Assado | Bacon Defumado | Pá de
+                Porco | Copa Lombo | Torresmo Crocante</p>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+      <div class="diferenciais">
+
+        <div class="block-dif-1">
+          <h4>Cortes Especiais*</h4>
+          <p> Picanha Grelhada | Red Angus | Prime Angus <br>Chorizo | Mignon na Mostarda e Mel</p>
+        </div>
+        <div class="block-dif-2 end">
+          <h4>Combinações Premium</h4>
+          <p>Experimente nossas combinações premium, onde você pode escolher os cortes especiais que mais lhe agradam e
+            combiná-los em um único prato. Aproveite uma seleção exclusiva de carnes premium acompanhadas de molhos
+            artesanais e guarnições especiais.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="cardapio-slide">
+      <div class="cardapio-content" style="background-image: url('imgs/bg-cardapio2.jpg');">
+        <div class="sign">
+          <img src="imgs/placa-de-madeira.png" alt="">
+
+        </div>
+        <h1 style="border-bottom: 3px solid #0051ff;text-align: center; ">Frutos do mar</h1>
+        <div style="color: #fff;" class="content1">
+
+          <div class="content-slider start">
+            <h2>Frutos do Mar</h2>
+            <p>Camarão ao Alho e Óleo | Lagosta Grelhada | Filé de Salmão | Camarão na Manteiga | Moqueca de Peixe |
+              Salmão com Ervas Finas</p>
+
+            <h2>Camarões Especiais</h2>
+            <p>Camarão ao Catupiry | Camarão Empanado | Camarão com Gorgonzola | Camarão com Molho de Maracujá | Camarão
+              ao Curry | Camarão na Moranga | Camarão ao Bafo</p>
+          </div>
+          <div class="content-slider end">
+            <h2>Peixes Finos</h2>
+            <p>Robalo Grelhado | Linguado à Belle Meunière | Bacalhau à Portuguesa | Salmão Grelhado com Legumes | Truta
+              com Amêndoas | Tilápia com Molho de Maracujá</p>
+
+            <h2>Combinações do Mar</h2>
+            <p>Paella Marinheira | Risoto de Frutos do Mar | Moqueca de Camarão e Peixe | Ensopado de Lula com Camarão |
+              Espaguete com Frutos do Mar | Bobó de Camarão | Caldeirada de Frutos do Mar</p>
+
+          </div>
+        </div>
+
+
+      </div>
+      <div class="diferenciais">
+
+        <div class="block-dif-1">
+          <h4>Sushi</h4>
+          <p>Nigiri de Salmão | Nigiri de Camarão | Nigiri de Polvo | Nigiri de Vieiras <br> Sushi Califórnia | Sushi
+            Filadélfia | Sushi Vegetariano | Sushi Gunkan</p>
+        </div>
+        <div class="block-dif-2 end">
+          <h4>Sashimi</h4>
+          <p>Sashimi de Salmão | Sashimi de Peixe Branco | Sashimi de Polvo <br> Sashimi de Vieiras | Sashimi de Lula |
+            Sashimi Misto</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="cardapio-slide">
+      <div class="cardapio-content" style="background-image: url('imgs/bg-cardapio3.jpg');">
+        <div class="sign">
+          <img src="imgs/placa-de-madeira.png" alt="">
+
+        </div>
+        <h1 style="border-bottom: 3px solid #b40000; text-align: center;">Massas</h1>
+        <div style="color: #fff;" class="content1">
+
+          <div class="content-slider start">
+            <h2>MASSAS TRADICIONAIS</h2>
+            <p>Spaghetti à Bolonhesa | Penne ao Molho de Tomate | Lasanha à Bolonhesa | Fettuccine Alfredo | Canelloni
+              de Espinafre e Ricota | Ravioli de Carne | Gnocchi ao Pesto | Rigatoni com Funghi | Talharim com Manteiga
+              e Sálvia</p>
+
+            <h2>MASSAS ESPECIAIS</h2>
+            <p>Risoto de Frutos do Mar | Fettuccine com Camarão e Tomate Seco | Penne com Gorgonzola e Nozes | Linguine
+              ao Molho de Limão Siciliano | Farfalle ao Molho de Queijo Brie | Tagliatelle com Salmão e Alcaparras |
+              Rigatoni com Abobrinha e Azeitonas | Macarrão Integral com Vegetais</p>
+          </div>
+          <div class="content-slider end">
+            <h2>OPÇÕES VEGETARIANAS</h2>
+            <p>Ravioli de Abóbora | Spaghetti com Tomate Cereja e Manjericão | Lasanha de Berinjela | Penne com Pesto de
+              Rúcula e Nozes | Nhoque de Batata Doce | Farfalle ao Molho de Tomate Assado | Tagliatelle com Aspargos e
+              Tomate Seco | Risoto de Cogumelos</p>
+
+            <h2>COMBINAÇÕES DE MOLHOS</h2>
+            <p>Molho Pomodoro | Molho Alfredo | Molho Carbonara | Molho Pesto | Molho Bolonhesa | Molho Puttanesca |
+              Molho Gorgonzola | Molho de Tomate Seco | Molho de Queijo Brie | Molho de Limão Siciliano</p>
+
+          </div>
+        </div>
+
+
+      </div>
+      <div class="diferenciais">
+
+        <div class="block-dif-1">
+          <h4>Cortes Especiais*</h4>
+          <p> Picanha Grelhada | Red Angus | Prime Angus <br>Chorizo | Mignon na Mostarda e Mel</p>
+        </div>
+        <div class="block-dif-2 end">
+          <h4>Combinações Premium</h4>
+          <p>Experimente nossas combinações premium, onde você pode escolher os cortes especiais que mais lhe agradam e
+            combiná-los em um único prato. Aproveite uma seleção exclusiva de carnes premium acompanhadas de molhos
+            artesanais e guarnições especiais.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 4 -->
+    <div class="cardapio-slide">
+      <div class="cardapio-content" style="background-image: url('imgs/bg-cardapio4.jpg');">
+        <div class="sign">
+          <img src="imgs/placa-de-madeira.png" alt="">
+
+        </div>
+        <h1 style="border-bottom: 3px solid #ddc701;  text-align: center;">Pratos Quentes</h1>
+        <div style="color: #fff;" class="content1">
+
+          <div class="content-slider start">
+            <h2>Pratos Quentes Tradicionais</h2>
+            <p>Strogonoff de Carne | Feijoada | Risoto de Frango | Moqueca Baiana | Bife à Parmegiana | Feijão Tropeiro
+              | Ensopado de Carne | Frango Xadrez | Picadinho Carioca | Galinhada</p>
+
+            <h2>Pratos Quentes Especiai</h2>
+            <p>Paella Valenciana | Camarão na Moranga | Bacalhoada | Filé de Salmão com Molho de Maracujá | Bobó de
+              Camarão | Pato ao Molho de Laranja | Costela Assada com Barbecue | Salmão Grelhado com Legumes | Risoto de
+              Frutos do Mar</p>
+          </div>
+          <div class="content-slider end">
+            <h2>Opções Vegetarianas</h2>
+            <p>Ratatouille | Escondidinho de Legumes | Quibe de Abóbora | Moqueca Vegana | Risoto de Cogumelos | Cuscuz
+              Marroquino com Legumes | Feijoada Vegetariana | Lasanha de Berinjela | Legumes Grelhados ao Molho Pesto
+            </p>
+
+            <h2>Pratos Saborosos</h2>
+            <p>Caldeirada de Frutos do Mar | Feijoada de Frutos do Mar | Strogonoff de Camarão | Peixe ao Molho de
+              Camarão | Risoto de Camarão | Camarão com Legumes | Linguado ao Molho de Limão Siciliano | Camarão com
+              Coco</p>
+
+          </div>
+        </div>
+
+
+      </div>
+      <div class="diferenciais">
+
+        <div class="block-dif-1">
+          <h4>Pratos Grelhados</h4>
+          <p>Experimente nossos deliciosos pratos grelhados, preparados na churrasqueira com o máximo de sabor e
+            suculência. Escolha entre cortes especiais de carnes, frutos do mar e opções vegetarianas para uma refeição
+            saudável e saborosa.</p>
+        </div>
+        <div class="block-dif-2 end">
+          <h4>Especialidades da Casa</h4>
+          <p>Conheça as especialidades únicas da nossa casa, criadas com dedicação e paixão pela nossa equipe de chefs.
+            Delicie-se com pratos exclusivos e cuidadosamente elaborados para tornar sua experiência gastronômica
+            inesquecível.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="cardapio-slide">
+      <div class="cardapio-content" style="background-image: url('imgs/bg-cardapio4.jpg');">
+        <div class="sign">
+          <img src="imgs/placa-de-madeira.png" alt="">
+
+        </div>
+        <h1 style="border-bottom: 3px solid #00b400;  text-align: center;">Saladas</h1>
+        <div style="color: #fff;" class="content1">
+
+          <div class="content-slider start">
+            <h2>Saladas Clássicas</h2>
+            <p>Salada Caesar | Salada Caprese | Salada Grega | Salada Niçoise | Salada Waldorf | Salada de Tomate com
+              Manjericão | Salada de Batata | Salada de Pepino com Iogurte | Salada de Folhas Verdes com Vinagrete</p>
+
+            <h2>Saladas Especiais</h2>
+            <p>Salada de Quinoa com Legumes | Salada de Frango com Manga | Salada de Camarão ao Coco | Salada de
+              Grão-de-Bico com Abacate | Salada de Salmão Defumado | Salada de Lentilha com Pimentão | Salada de Atum
+              com Feijão Branco | Salada de Couscous Marroquino</p>
+          </div>
+          <div class="content-slider end">
+            <h2>Opções Vegetarianas</h2>
+            <p>Salada de Cenoura Ralada com Passas | Salada de Rúcula com Nozes e Queijo Gorgonzola | Salada de
+              Abobrinha Grelhada | Salada de Beterraba com Queijo de Cabra | Salada de Folhas Verdes com Grão-de-Bico |
+              Salada de Espinafre com Morango e Queijo Feta | Salada de Tomate e Abacate | Salada de Feijão-Frade</p>
+
+            <h2>Molhos e Vinagretes</h2>
+            <p>Molho de Mostarda e Mel | Vinagrete Balsâmico | Molho de Iogurte com Hortelã | Molho de Tahine |
+              Vinagrete de Limão Siciliano | Molho de Gorgonzola | Molho de Framboesa | Vinagrete de Ervas Finas | Molho
+              de Alho-Poró | Molho de Manga com Pimenta</p>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="diferenciais">
+
+        <div class="block-dif-1">
+          <h4>Pratos Grelhados</h4>
+          <p>Experimente nossos deliciosos pratos grelhados, preparados na churrasqueira com o máximo de sabor e
+            suculência. Escolha entre cortes especiais de carnes, frutos do mar e opções vegetarianas para uma refeição
+            saudável e saborosa.</p>
+        </div>
+        <div class="block-dif-2 end">
+          <h4>Especialidades da Casa</h4>
+          <p>Conheça as especialidades únicas da nossa casa, criadas com dedicação e paixão pela nossa equipe de chefs.
+            Delicie-se com pratos exclusivos e cuidadosamente elaborados para tornar sua experiência gastronômica
+            inesquecível.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <!-- Setas de navegação do carousel -->
+
+
+  <!-- Inclua o arquivo JS do Font Awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  <!-- Inclua o arquivo JS do jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Inclua o arquivo JS do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Inclua o arquivo JS do Slick Carousel -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Inicializar o Slick Carousel
+      $('#cardapio-carousel').slick({
+        slidesToShow: 1,
+        autoplay: false,
+        autoplaySpeed: 15000,
+        dots: true,
+        arrows: true, // Remova as setas de navegação padrão do Slick Carousel
+        infinite: true,
+        fade: true,
+        cssEase: "linear",
+        prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+        nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>
